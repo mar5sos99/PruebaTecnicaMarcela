@@ -1,0 +1,140 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Mantenimiento</title>
+    <link rel="stylesheet" href="estilos1.css">
+</head>
+<body>
+
+    <div class="topnav">
+        <a href="facturacion.html">Facturación</a>
+        <a href="index.html">Mantenimiento de producto</a>
+    </div>
+
+    <br />
+
+    <div class="seccion">
+        <a class="borde" href="index.html">Actualizar Producto</a>
+        <a href="agregar.html">Agregar Producto</a>
+    </div>
+
+    <div class="div-principal borde">
+
+
+        <div class="div-top">
+            <label>Buscar Producto</label>
+            <input list="browsers" type="text" placeholder="Ingrese el código del producto" />
+
+            <datalist id="browsers">
+                <option value="Chrome">
+                <option value="Firefox">
+                <option value="Internet Explorer">
+                <option value="Opera">
+                <option value="Safari">
+                <option value="Microsoft Edge">
+            </datalist>
+
+        </div>
+
+        <div class="div-izq">
+
+            <div class="form-izq">
+                <label>Código</label> <br />
+                <label>Descripción</label> <br />
+                <label>Precio del producto</label> <br />
+                <label>Costo de producción</label> <br />
+                <label>Estado</label> <br />
+            </div>
+            <div class="form-der">
+                <input id="codigo" /><br />
+                <input id="decripcion" /><br />
+                <input id="precio" /><br />
+                <input id="costo" /><br />
+                <input id="estado" /><br />
+                <button class="boton" style="float:right;" onclick="openForm2()">Editar Datos</button><br />
+            </div>
+        </div>
+
+        <div class="div-der">
+            <div class="div-impuestos borde">
+                <label>Porcentaje de impuesto actual</label><br /><br />
+                <input id="impuesto" /><br />
+                <button onclick="openForm1()">Actualizar % de Impuestos</button>
+            </div>
+            <br /><br /><br />
+            
+        </div>
+
+
+    </div>
+    <div class="popup-form1 borde" id="popup1">
+        <div class="p-f-top">
+            <label>Ingresar nuevo porcentaje de impuestos</label>
+        </div>
+
+        <div class="p-f-izq">
+            <label>Fecha</label><br />
+            <label>Porcentaje Nuevo</label>
+        </div>
+
+        <div class="p-f-der">
+            <input id="fecha" type="date" /><br />
+            <input id="porcentaje" />
+        </div>
+
+        <div class="p-f-bottom">
+            <button class="boton" onclick="closeForm1()">Actualizar Porcentaje</button>
+        </div>
+    </div>
+
+    <div class="popup-form2 borde" id="popup2">
+        <div class="p-f2-top">
+            <label>Ingrese los datos actualizados del Producto</label>
+        </div>
+
+        <div class="p-f2-izq">
+            <label>Código</label> <br />
+            <label>Descripción</label> <br />
+            <label>Precio del producto</label> <br />
+            <label>Costo de producción</label> <br />
+            <label>Estado</label> <br />
+        </div>
+
+        <div class="p-f2-der">
+            <input id="codigo" /><br />
+            <input id="decripcion" /><br />
+            <input id="precio" /><br />
+            <input id="costo" /><br />
+            <div class="content-select">
+                <select id="estado">
+                    <option value="0">Activo</option>
+                    <option value="1">Inactivo</option>
+                </select>
+            </div>
+        </div>
+        <button class="boton p-f2-bottom" onclick="closeForm2()">Guardar Cambios</button>
+                                                                         
+    </div>
+
+
+    <script>
+        function openForm1() {
+            document.getElementById("popup1").style.display = "block";
+        }
+
+        function closeForm1() {
+            document.getElementById("popup1").style.display = "none";
+        }
+
+        function openForm2() {
+            document.getElementById("popup2").style.display = "block";
+        }
+
+        function closeForm2() {
+            document.getElementById("popup2").style.display = "none";
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Facturación</title>
+    <link rel="stylesheet" href="estilos3.css">
+    
+</head>
+<body>
+    <div class="topnav">
+        <a href="facturacion.html">Facturación</a>
+        <a href="index.html">Mantenimiento de producto</a>
+    </div>
+    
+    <div class="div-principal borde">
+
+
+        <div class="lado-izq ">
+            
+            <div class="lado-izq-top">
+                <div class="parte1">
+                    <label>N° de factura</label> <br />
+                    <label>Nombre del cliente</label><br />
+                </div>
+                <div class="parte2">
+                    <input id="NumFactura" /><br />
+                    <input id="NomCliente" /><br />
+                </div>
+                <div class="parte1">
+                    <label>Fecha</label><br />
+                    <label>% de Impuesto</label><br />
+                </div>
+                <div class="parte2">
+                    <input type="date" /><br />
+                    <input id="Impuesto" /><br />
+                </div>
+            </div>
+            
+            <div class="lado-izq-medio">
+                <table style="width:100%">
+                    <tr>
+                        <th>Código</th>
+                        <th>Descripción</th>
+                        <th>Precio</th>
+                        <th>Cantidad</th>
+                        <th>Subtotal</th>
+                        <th>Impuesto</th>
+                        <th>Total</th>
+                    </tr>
+                    <tr>
+                        <td>000</td>
+                        <td>cocoa</td>
+                        <td>100</td>
+                        <td>3</td>
+                        <td>300</td>
+                        <td>36</td>
+                        <td>336</td>
+                    </tr>
+                </table>
+            </div>
+              
+            <div class="lado-izq-bottom">
+                <div class="bot-1">
+                    <label>Subtotal</label><br />
+                    <label>Impuestos</label><br />
+                    <label>TOTAL</label><br />
+                </div>
+                <div class="bot-2">
+                    <input id="subtotal" /><br />
+                    <input id="totalImp"/><br />
+                    <input id="TOTAL"/><br />
+                </div>
+            </div>
+        </div>
+        
+       
+        <div class="lado-der">
+
+            <div class="lado-der-top">
+
+                <label>Agregar Producto</label><br /><br />
+                <label>
+                    <input list="browsers" type="text" placeholder="Ingrese el código" />
+                </label>
+                <datalist id="browsers">
+                    <option value="Chrome">
+                    <option value="Firefox">
+                    <option value="Internet Explorer">
+                    <option value="Opera">
+                    <option value="Safari">
+                    <option value="Microsoft Edge">
+                </datalist>
+
+            </div>
+            <div class="lado-der-medio">
+                <div class="med-part1">
+                    <div class="div1">
+                        <label>Producto</label><br />
+                        <label>Precio</label><br />
+                    </div>
+                    <div class="div2">
+                        <input id="descripcion" /><br />
+                        <input id="precio" /><br />
+                    </div>
+                    <div class="div3">
+                        <label>Cantidad</label><br />
+                        <input type="number" min="1" max="100" /><br />
+                    </div>
+                </div>
+
+               <br /><br />                
+                        <button class="boton">Agregar</button><br />            
+
+
+            </div>
+            
+            <div>
+                <br /><br />
+                <button class="boton">Facturar</button>
+            </div>
+
+        </div>
+
+    </div>
+
+    
+</body>
+</html>

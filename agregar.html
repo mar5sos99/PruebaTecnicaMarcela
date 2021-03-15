@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Mantenimiento</title>
+    <link rel="stylesheet" href="estilos2.css">
+</head>
+<body>
+    <div class="topnav">
+        <a onclick="location.href='facturacion.html'">Facturación</a>
+        <a onclick="location.href='index.html'">Mantenimiento de producto</a>
+    </div>
+    <br />
+    <div class="seccion">
+        <a href="index.html">Actualizar Producto</a>
+        <a class="borde" onclick="location.href='agregar.html'">Agregar Producto</a>
+    </div>
+    
+    <div class="div-principal borde">
+        <div class="div-izq">
+            <br />
+            <label>Ingrese los datos del nuevo Producto</label><br /><br />
+            <div class="form-izq">
+                <label>Código</label> <br />
+                <label>Descripción</label> <br />
+                <label>Precio del producto</label> <br />
+                <label>Costo de producción</label> <br />
+                <label>Estado</label> <br />
+            </div>
+            <div class="form-der " >
+                <input id="codigo" /><br />
+                <input id="decripcion" /><br />
+                <input id="precio" /><br />
+                <input id="costo" /><br />
+                <div class="content-select">
+                    <select id="estado">
+                        <option value="0">Activo</option>
+                        <option value="1">Inactivo</option>
+                    </select>
+                </div><br />                    
+            </div>
+        </div>
+        
+        <div class="div-der">
+            <br /><br /><br /><br /><br />
+            <button>Agregar Producto</button>
+        </div>
+            
+            
+        
+    </div>
+</body>
+</html>

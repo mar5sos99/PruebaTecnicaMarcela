@@ -1,0 +1,311 @@
+﻿body {
+    background-color: #F5F2F2;
+    box-sizing: border-box;
+    font-family: Segoe UI,Geneva,Tahoma, Verdana, sans-serif;
+    margin:2%;
+}
+
+/**************barra de navegación****************/
+
+.topnav {
+    
+    padding: 20px;
+    text-align: right;
+
+}
+
+    .topnav a {
+        padding: 14px 16px;
+        color: #363945;
+        font-size: 20px;
+        display: inline-block;
+        text-decoration: none;
+        
+    }
+        .topnav a:hover {
+            border-bottom: 2px solid #E0B589;
+            letter-spacing: 1px;
+        }
+
+/***************barra de secciones*****************/
+.seccion a {
+    padding: 10px 15px 0px;
+    color: #9A8B4F;
+    font-size: 18px;
+    display: inline-block;
+    border-bottom: none;
+    text-decoration: none;
+    margin-right:0%;
+}
+
+    .seccion a:hover {
+        font-size: 19px;
+    }
+
+    /************cuadro del formulario principal***************/
+
+.borde {
+    border: 3px solid #E0B589;
+    padding: 2%;
+    
+}
+
+.div-principal {
+    overflow: hidden;
+    width: auto;
+    
+}
+
+        /*seccion de arriba */
+.div-top {
+    position: inherit;
+    height: 50px;
+    width: 100%;
+    padding: 2%;
+    display: inline-block;
+}
+    .div-top label {
+        letter-spacing: 1px;
+        margin-left:80px;
+    }
+        .div-top input {
+            position: center;
+            width: 400px;
+            height: 45px;
+            border: none;
+            border-radius: 15px;
+            background-color: #EFE1CE;
+            color: #939597;
+            text-indent:10px;
+            margin-left:50px;
+        }
+       
+
+        /*seccion de la izquierda*/
+.div-izq {
+    position:inherit;
+    width: 60%;
+    float:left;
+}
+
+        /* labels */
+    .form-izq {
+        position: inherit;
+        float: left;
+        width: 30%;
+        margin-top: 10px;
+        text-align: right;
+        line-height: 40pt;
+        letter-spacing:1.5px;
+    }
+        /* textbox */
+    .form-der {
+        position: inherit;
+        float: right;
+        width: 60%;
+        margin-top: 9px;
+        line-height: 40pt;
+    
+    }
+        .form-der input {
+            border: none;
+        
+            border-bottom: 3px solid #E0B589;
+            background-color: #F5F2F2;
+            height: 25px;
+            width: 300px;
+        }
+
+
+        /*seccion de la derecha*/
+.div-der {
+    position:inherit;
+    width:40%;
+    float:right;
+    
+}
+
+    .div-der button {
+        border-radius: 10px;
+        border: 3px solid #363945;
+        color: #363945;
+        background-color: #F5f2F2;
+        height: 50px;
+        width: 120px;
+        letter-spacing: 1px;
+        float:right;
+    }
+
+    
+        .div-der button:hover {
+            color: #F5f2F2;
+            background-color: #363945;
+        }
+
+    /***************sub-seccion de porcentaje de impuestos*************/
+.div-impuestos {
+    overflow: hidden;
+    width: auto;
+    margin: 20px;
+    margin-bottom: 0px;
+    padding: 4%;
+}
+    .div-impuestos label {
+        letter-spacing: 1px;
+    }
+
+    .div-impuestos input {
+        border: none;
+        border-bottom: 3px solid #E0B589;
+        background-color: #F5F2F2;
+        height: 25px;
+        width: 60px;
+        text-indent:20px;
+        margin-left:25%;
+    }
+
+    /******************formulario para cambiar el porcentaje de impuesto*************/
+.popup-form1 {
+    display:none;
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+    left: 27%;
+    top: 25%;
+    width: 600px;
+    height: 400px;
+    background-color: #F5F2F2;
+}
+.p-f-top {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    padding: 2%;
+    text-align: center;
+    letter-spacing: 1px;
+    margin-top:8%;
+}
+
+.p-f-izq {
+    position: relative;
+    float: left;
+    width: 45%;
+    
+    text-align: right;
+    line-height: 40pt;
+    letter-spacing: 1.5px;
+}
+
+.p-f-der {
+    position: relative;
+    float: right;
+    width: 50%;
+    text-align: left;
+    
+    line-height: 40pt;
+}
+
+    .p-f-der input {
+        border-radius: 10px;
+        border: 2px solid #E0B589;
+        
+        height: 25px;
+        width: 200px;
+    }
+
+.p-f-bottom {
+   
+    padding-left: 240px;
+    padding-top: 170px;
+    
+}
+
+.boton {
+    border-radius: 10px;
+    border: 3px solid #363945;
+    color: #363945;
+    background-color: #F5f2F2;
+    height: 50px;
+    width: 120px;
+    letter-spacing: 1px;
+    
+}
+    .boton:hover {
+        color: #F5f2F2;
+        background-color: #363945;
+    }
+
+    /************formulario para editar los productos*************/
+.popup-form2 {
+    display: none;
+    overflow: hidden;
+    position: absolute;
+    
+    left: 20%;
+    top: 25%;
+    width: 800px;
+    height: 400px;
+    background-color: #F5F2F2;
+}
+
+.p-f2-top {
+    position: relative;
+    height: 30px;
+    width: 100%;
+    padding: 1%;
+    text-align: center;
+    letter-spacing: 1px;
+    
+}
+
+.p-f2-izq {
+    position: relative;
+    float: left;
+    width: 45%;
+    text-align: right;
+    line-height: 40pt;
+    letter-spacing: 1.5px;
+   
+}
+
+.p-f2-der {
+    position: relative;
+    float: right;
+    width: 50%;
+    text-align: left;
+    line-height: 40pt;
+    
+}
+
+    .p-f2-der input {
+        border-radius: 10px;
+        border: 2px solid #E0B589;
+        height: 25px;
+        width: 200px;
+    }
+
+    .content-select select {
+        border-radius: 10px;
+        border: 2px solid #E0B589;
+        background-color: #F5F2F2;
+        height: 33px;
+        width: 210px;
+    }
+
+
+   .p-f2-bottom{
+       margin-left:43%;
+       margin-top:4%;
+   }
+
+
+
+
+/*.borde-input {
+    
+    border-radius: 10px;
+    border: 2px solid #E0B589;
+    background-color: #F5F2F2;
+    height: 25px;
+    width: 300px;
+}*/

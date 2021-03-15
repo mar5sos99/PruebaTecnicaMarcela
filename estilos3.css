@@ -1,0 +1,242 @@
+﻿body {
+    background-color: #F5F2F2;
+    box-sizing: border-box;
+    font-family: Segoe UI,Geneva,Tahoma, Verdana, sans-serif;
+    margin: 2%;
+    
+}
+
+/*barra de navegación*/
+
+.topnav {
+    padding: 20px;
+    text-align: right;
+}
+
+    .topnav a {
+        padding: 14px 16px;
+        color: #363945;
+        font-size: 20px;
+        display: inline-block;
+        text-decoration: none;
+    }
+
+        .topnav a:hover {
+            border-bottom: 2px solid #E0B589;
+            letter-spacing: 1px;
+        }
+
+/************cuadro del formulario principal***************/
+.borde {
+    border: 3px solid #E0B589;
+    /*padding: 1%;*/
+}
+
+.div-principal {
+    overflow: hidden;
+    width: auto;
+    height:500px;
+}
+
+/**************seccion izquierda del formulario***************/
+.lado-izq {
+    position: inherit;
+    width: 60%;
+    float: left;
+    height:100%;
+}
+
+ /********* parte de arriba************/
+.lado-izq-top {
+    padding: 10px;
+    height: 20%;
+    border: 3px solid #E0B589;
+    border-top:none;
+    border-left:none;
+}
+
+    .lado-izq-top div {
+        display: inline-block;
+        
+        line-height: 30pt;
+        text-align: right;
+        
+    }
+
+    .lado-izq-top input {
+        border-radius: 10px;
+        border: 2px solid #E0B589;
+        background-color: #F5F2F2;
+        height: 25px;
+        width: 90%;
+        margin: 4px;
+        text-indent: 20px;
+        float: left;
+    }
+
+.parte1 {    
+    width:24%
+}
+
+.parte2 {
+    width:25%;
+}
+
+/*********parte del medio***********/
+.lado-izq-medio {
+    height: 50%;
+    border: 3px solid #E0B589;
+    border-left:none;
+    border-top:none;
+}
+
+table, td, th {
+    border: 1px solid #E0B589;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/***************parte de abajo**********/
+.lado-izq-bottom {
+    height: 30%;
+    float: right;
+    border: 3px solid #E0B589;
+    border-top:none;
+    width:35%;
+   
+    padding-left:50px;
+    
+}
+
+    .lado-izq-bottom div {
+        display: inline-block;
+        line-height: 30pt;
+        text-align: right;
+    }
+
+    .lado-izq-bottom input {
+        border-radius: 10px;
+        border: 2px solid #E0B589;
+        background-color: #F5F2F2;
+        height: 25px;
+        width: 50%;
+        margin: 4px;
+        text-indent: 20px;
+        float: left;
+    }
+
+.bot1 {
+
+    width:20%;
+}
+
+.bot2 {
+    width: 30%;
+}
+/**************seccion izquierda del formulario***************/
+.lado-der {
+    position: inherit;
+    width: 40%;
+    float: right;
+
+}
+
+/********* parte de arriba************/
+.lado-der-top {
+    padding: 30px;
+    padding-left:20%;
+    height: 100px;
+    border: 3px solid #E0B589;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    
+}
+
+    .lado-der-top input {
+        border-radius: 10px;
+        border: 2px solid #E0B589;
+        background-color: #F5F2F2;
+        height: 25px;
+        width: 70%;
+        margin: 4px;
+        text-indent: 20px;
+        float: left;
+        
+    }
+
+/********* parte del medio************/
+.lado-der-medio {
+    padding: 10px;
+    height: 200px;
+    border: 3px solid #E0B589;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+.med-part1 {
+    
+   
+    /*text-align: right;*/
+    height: 50%;
+    
+    width: 100%;
+}
+
+    .div1 {
+        display: inline-block;
+        width: 30%;
+        height: 100%;
+        text-align: right;
+        line-height: 40pt;
+    }
+    .div2 {
+        display: inline-block;
+        width: 30%;
+        height: 100%;
+        text-align: left;
+        line-height: 40pt;
+    }
+
+        .div2 input {
+            border: none;
+            border-bottom: 3px solid #E0B589;
+            background-color: #F5F2F2;
+            height: 25px;
+            width: 80%;
+            margin-left: 15px;
+        }
+    .div3 {
+        display: inline-block;
+        width: 30%;
+        float:right;
+        height:100%;
+        padding:10px;
+    }
+        .div3 input {
+            margin-left: 45px;
+            margin-top: 20px;
+            border: 3px solid #E0B589;
+            background-color: #F5F2F2;
+            height: 25px;
+        }
+
+
+.boton {
+    border-radius: 10px;
+    border: 3px solid #363945;
+    color: #363945;
+    background-color: #F5f2F2;
+    height: 30px;
+    width: 120px;
+    letter-spacing: 1px;
+    margin-left:200px;
+}
+
+    .boton:hover {
+        color: #F5f2F2;
+        background-color: #363945;
+    }
