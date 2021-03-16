@@ -1,8 +1,8 @@
 # Prueba tecnica terminada
 
-Se traslado el codigo de html a aspx para poder realizar la conección a la base de datos.
+He trasladado el codigo de html a aspx para poder realizar la conección a la base de datos usando C#.
 
-contiene las funciones de:
+El programa realiza las funciones de:
 - Agregar productos
 - Editar productos
 - Mostrar los productos disponibles
